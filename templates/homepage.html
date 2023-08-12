@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- <p>Do you want to <a href="{{ url_for('login') }}">log in?</a> -->
+
+<h1>Ratings</h1>
+
+<h2>Movies</h2>
+<p><a href="/movie_list">View all movies</a></p>
+
+<h2>Users</h2>
+<p><a href="/users">View all users</a></p>
+
+<!-- <button onclick = '/logout' method = 'GET'
+<input type="button" name="logout"> 
+</button> -->
+
+<a href="/sign_out"><button type ="button">Logout</button></a>
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul>
+    <li> Age: {{ age }} </li>
+    <li> Zipcode: {{ zipcode }} </li>
+    <li> Movies: 
+        <ul>
+            {% for movie in movie_list %}
+                <li> {{movie.movie.title}}, {{movie.score}} </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
+
+
+<a href="/sign_out"><button type ="button">Logout</button></a>
+
+{% endblock %}
